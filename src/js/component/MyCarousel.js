@@ -25,7 +25,7 @@ export const MyCarousel = props => {
 
 	return (
 		<div className="align-items-center text-center mb-5">
-			<h2 className="col-12 text-left text-light text-capitalize" style={{ fontSize: "3rem" }}>
+			<h2 className="col-12 text-left text-light text-capitalize" style={{ fontSize: "3rem", fontFamily: "fantasy"}}>
 				{name}
 			</h2>
 			<div className="d-flex flex-row" style={{ width: "100%", overflow: "auto" }}>

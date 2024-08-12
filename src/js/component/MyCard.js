@@ -39,9 +39,9 @@ export const MyCard = props => {
 	};
 
 	return (
-		<Card className="m-4" style={{ minWidth: "18rem", maxWidth: "18rem", minHeight: "22rem" }}>
+		<Card className="m-4" style={{ minWidth: "18rem", maxWidth: "18rem", minHeight: "22rem", background: "#C8C8C8"}}>
 			<Card.Body className="">
-				<Card.Title className="b-text" style={{ whiteSpace: "initial", fontSize: "2rem" }}>
+				<Card.Title className="b-text" style={{ whiteSpace: "initial", fontSize: "2rem", fontFamily: "fantasy"}}>
 					{props.name}
 				</Card.Title>
 				{props.type == "people" ? (
@@ -99,7 +99,7 @@ export const MyCard = props => {
 						bottom: "1.1rem",
 						right: "2rem",
 						cursor: "pointer"
-					}}
+						}}
 					onClick={() => addFavorite()}
 				/>
 			</Card.Body>

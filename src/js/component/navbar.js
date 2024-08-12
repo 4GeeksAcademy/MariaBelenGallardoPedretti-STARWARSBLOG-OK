@@ -7,17 +7,17 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-dark bg-dark mb-3">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">BLOG DE STARWARS</span>
+				<span className="navbar-brand mb-0 h1" style={{fontFamily: "fantasy"}}>BLOG DE STARWARS</span>
 			</Link>
 			<div className="ml-auto d-inline-block">
 				<Link to="/information/people">
-					<span className="navbar-brand mb-0 h1">PERSONAJES</span>
+					<span className="navbar-brand mb-0 h1" style={{fontFamily: "fantasy"}}>PERSONAJES</span>
 				</Link>
 				<Link to="/information/planets">
-					<span className="navbar-brand mb-0 h1">PLANETAS</span>
+					<span className="navbar-brand mb-0 h1" style={{fontFamily: "fantasy"}}>PLANETAS</span>
 				</Link>
 				<Link to="/information/vehicles">
-					<span className="navbar-brand mb-0 h1">VEHÍCULOS</span>
+					<span className="navbar-brand mb-0 h1" style={{fontFamily: "fantasy"}}>VEHÍCULOS</span>
 				</Link>
 				<Link to="/information/favorites">
 					<span className="navbar-brand mb-0 h1">
