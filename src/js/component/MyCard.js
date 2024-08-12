@@ -21,13 +21,20 @@ export const MyCard = props => {
 
 		newFavorite = newFavorite[0];
 
+		const existingIndex = favorites.findIndex(item => item.name === newFavorite.name);
+
 		let newArray = favorites;
-		newArray.push(newFavorite);
+
+		if (existingIndex !== -1) {
+			// Si ya existe, eliminarlo
+			newArray.splice(existingIndex, 1);
+		} else {
+			// Si no existe, agregarlo
+			newArray.push(newFavorite);
+		}
 
 		setFavorites(newArray);
-
 		actions.setFavorites(favorites);
-
 		console.log(store.favorites);
 	};
 
